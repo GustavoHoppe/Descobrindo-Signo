@@ -11,46 +11,51 @@ body {
     background-attachment: fixed;
     background-position: center;
     font: Normal 20pt Arial;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    
+    padding-top: 10vw;
 }
 
 header {
     background-color: rgb(24, 6, 53);
-    width: auto;
-    height: auto;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
     box-shadow: 0px 0px 10px  3px white;
     
 }
 
 h1 {
-    margin: 10px;
+    font-size: 2em;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.8em;
+    }
+
+    #txtnome {
+        width: 140px;
+    }
+
+    img {
+        width: 40vw;
+    }
     
 }
 
 section {
     background-color: rgb(24, 6, 53);
-    width: auto;
-    height: auto;
+    width: 70vw;
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0px 0px 10px  3px white;
-    margin-top: 80px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-
+    margin: auto;
+    align-items: center;
+    padding: 30px;
 }
 
 #info {
@@ -60,22 +65,12 @@ section {
 }
 
 #imagem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 p {
     margin-bottom: 20px;
-}
-
-footer {
-    
-    color: white;
-    margin-top: 50px;
-
 }
 
 a {
@@ -89,7 +84,6 @@ a:hover {
 }
 
 input[type=button] {
-    
     border: 2px solid blueviolet;
     background-color: blueviolet;
     color: white;
@@ -108,7 +102,6 @@ input[type=button]:hover {
 }
 
 input[type=text] {
-    
     width: 350px;
     height: 30px;
     border: 2px solid white;
@@ -128,17 +121,15 @@ input[type=number] {
 }
 
 #res {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    text-align: center;
 }
 
-#txtres {
-    margin-left: 20px;
-    margin-right: 20px;
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
 }
+
     
 
 
